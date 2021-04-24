@@ -9,12 +9,12 @@ AospPanel
 CompactPanel
 OreoPanel
 TiledPanel
-MiuiPanel
 ShapeShiftPanel
+MiuiCompactPanel
 ```
 
 **Please refrain from altering packagenames/classpaths and Copyright headers**
-Respect original works, we accept contributions via [Gerrit Code Review](review.potatoproject.co) :)
-Feel free to track this repository directly!
+Respect original works, POSP accepts contributions via [Gerrit Code Review](review.potatoproject.co) :)
+Feel free to track this repository directly from POSP!
 
 Special thanks to Alex (treydev) for the ViewTreeInspector animation trick!
