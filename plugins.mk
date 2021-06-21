@@ -3,4 +3,5 @@ PRODUCT_PACKAGES += \
 	CompactPanel \
 	TiledPanel \
 	MiuiCompactPanel \
-	ShapeShiftPanel 
+	ShapeShiftPanel \ 
+        OosPanel
