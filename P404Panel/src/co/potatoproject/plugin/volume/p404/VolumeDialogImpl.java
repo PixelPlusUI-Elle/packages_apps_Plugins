@@ -1121,7 +1121,6 @@ public class VolumeDialogImpl extends PanelSideAware implements VolumeDialog {
                     mRingerIcon.setTag(Events.ICON_STATE_MUTE);
                     addAccessibilityDescription(mRingerIcon, RINGER_MODE_SILENT,
                             mSysUIContext.getString(mSysUIR.string("volume_ringer_hint_unmute")));
-                     mRinger.setBackgroundTintList(null);
                     break;
                 case AudioManager.RINGER_MODE_NORMAL:
                 default:
