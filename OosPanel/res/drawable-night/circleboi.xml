@@ -4,10 +4,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="oval">
     <solid
-        android:color="#121212"/>
+        android:color="?android:attr/panelColorBackground"/>
 
    <size 
-       android:width="41dp"
+        android:width="41dp"
         android:height="41dp"/>
 
 </shape>

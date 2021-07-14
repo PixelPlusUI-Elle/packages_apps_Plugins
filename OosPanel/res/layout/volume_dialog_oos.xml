@@ -38,10 +38,20 @@
         android:orientation="vertical"
         android:clipToPadding="false">
 
+        <LinearLayout
+            android:minWidth="@dimen/volume_dialog_panel_width"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:orientation="vertical"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:background="@android:color/transparent">
+
         <FrameLayout
             android:id="@+id/ringer"
-            android:layout_width="@dimen/volume_dialog_ringer_size"
-            android:layout_height="@dimen/volume_dialog_ringer_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:translationZ="@dimen/volume_dialog_elevation"
             android:clipToPadding="false"
             android:background="@drawable/rounded_bg_top">
@@ -85,17 +95,6 @@
             android:clipToPadding="false"
             android:background="@drawable/rounded_bg_bottom" >
 
-                <TextView
-                    android:textSize="29px" 
-                    android:ellipsize="end" 
-                    android:gravity="center" 
-                    android:layout_gravity="top"
-                    android:id="@+id/volume_row_type" 
-                    android:layout_width="match_parent" 
-                    android:layout_height="wrap_content"
-                    android:visibility="gone"
-                    android:maxLines="1" 
-                    style="@style/nez_contorl_text_style_descriptions"/>
             <LinearLayout
                 android:id="@+id/volume_dialog_rows"
                 android:layout_width="wrap_content"
@@ -113,7 +112,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:animateLayoutChanges="true"
-                android:background="@drawable/rounded_bg_bottom_background">
+                android:background="@drawable/rounded_bg_bottom">
                 <co.potatoproject.plugin.volume.common.AlphaOptimizedImageButton
                     android:id="@+id/media_output"
                     android:src="@drawable/ic_bluetooth_audio"
@@ -154,8 +153,8 @@
 
         <FrameLayout
             android:id="@+id/odi_captions"
-            android:layout_width="@dimen/volume_dialog_caption_size"
-            android:layout_height="@dimen/volume_dialog_caption_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/volume_dialog_spacer"
             android:gravity="right"
             android:layout_gravity="right"
@@ -173,6 +172,8 @@
                 android:soundEffectsEnabled="false"
                 sysui:optedOut="false"/>
         </FrameLayout>
+
+        </LinearLayout>
 
     </LinearLayout>
 
