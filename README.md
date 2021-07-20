@@ -7,6 +7,7 @@ Then, compile the following modules:
 ```
 AospPanel
 CompactPanel
+OreoPanel
 TiledPanel
 MiuiPanel
 ShapeShiftPanel
